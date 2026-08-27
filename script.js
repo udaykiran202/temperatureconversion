@@ -11,5 +11,5 @@ ctof.onclick=function(){
 ftoc.onclick=function(){
     let vari=Number(temp.value);
     res=((vari-32)*5)/9;
-    hh3.textContent=`The ${vari} fahrenheit is converted to  ${res} celsius`;
+    h3.textContent=`The ${vari} fahrenheit is converted to  ${res} celsius`;
 }
