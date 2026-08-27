@@ -1,0 +1,145 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Page */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    );
+
+    color: #fff;
+}
+
+/* Main heading */
+h1 {
+    margin-bottom: 30px;
+    font-size: 40px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* Temperature label */
+label {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Input */
+#temps {
+    width: 300px;
+    padding: 14px 18px;
+
+    border: none;
+    border-radius: 12px;
+    outline: none;
+
+    font-size: 20px;
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.95);
+    color: #333;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+    transition: 0.3s;
+}
+
+#temps:focus {
+    transform: scale(1.03);
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.25);
+}
+
+/* Button container */
+#buttoncontiner {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* Buttons */
+button {
+    padding: 13px 20px;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: capitalize;
+
+    cursor: pointer;
+
+    color: #fff;
+    background: #222;
+
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+button:hover {
+    transform: translateY(-3px);
+    background: #fff;
+    color: #764ba2;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Click effect */
+button:active {
+    transform: translateY(0);
+}
+
+/* Result */
+#H3 {
+    min-width: 250px;
+    margin-top: 30px;
+    padding: 18px 25px;
+
+    border-radius: 12px;
+
+    text-align: center;
+    font-size: 24px;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
+    #temps {
+        width: 260px;
+    }
+
+    #buttoncontiner {
+        flex-direction: column;
+        width: 260px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
